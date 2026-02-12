@@ -102,6 +102,14 @@ Source0:  %{forgesource}
 # fontconfig files, from /usr/share/fontconfig/templates/basic-font-template.conf
 # TODO: parametrize from single template
 
+
+# If I understand correctly, these weren't defined and should have been
+%global fontpkgname1 monaspace-argon-fonts
+%global fontpkgname2 monaspace-krypton-fonts
+%global fontpkgname3 monaspace-neon-fonts
+%global fontpkgname4 monaspace-radon-fonts
+%global fontpkgname5 monaspace-xenon-fonts
+
 %global baseurl https://raw.githubusercontent.com/azrdev/monaspace-rpm/refs/heads/main/
 Source11: %{baseurl}/69-%{fontpkgname1}.conf
 Source12: %{baseurl}/69-%{fontpkgname2}.conf
