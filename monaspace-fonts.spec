@@ -101,11 +101,13 @@ GitHub Monaspace Krypton: Mechanical sans
 Source0:  %{forgesource}
 # fontconfig files, from /usr/share/fontconfig/templates/basic-font-template.conf
 # TODO: parametrize from single template
-Source11: 69-%{fontpkgname1}.conf
-Source12: 69-%{fontpkgname2}.conf
-Source13: 69-%{fontpkgname3}.conf
-Source14: 69-%{fontpkgname4}.conf
-Source15: 69-%{fontpkgname5}.conf
+
+%global baseurl https://raw.githubusercontent.com/azrdev/monaspace-rpm/refs/heads/main/
+Source11: %{baseurl}/69-%{fontpkgname1}.conf
+Source12: %{baseurl}/69-%{fontpkgname2}.conf
+Source13: %{baseurl}/69-%{fontpkgname3}.conf
+Source14: %{baseurl}/69-%{fontpkgname4}.conf
+Source15: %{baseurl}/69-%{fontpkgname5}.conf
 
 %description
 %wordwrap -v common_description
